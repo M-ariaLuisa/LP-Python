@@ -2,12 +2,19 @@ import os
 os.system("cls")
 
 valor= float(input("Digite o valor do produto: "))
+
+print("""
+1- À vista
+2- À Prazo
+""")
+
 forma_pagamento= int(input("Digite o codigo da forma de pagamento desejada: "))
 
 
 
 match forma_pagamento:
     case 1:
+        # Obtendo o valor do desconto de 10%
         print("Pagamento à vista")
         desconto= valor * 0.10
         resultado = valor - (valor * 0.10)
@@ -20,7 +27,7 @@ match forma_pagamento:
             """)
     case 2:
         print("Pagamento à prazo")
-        parcelas= int(input("Digite a quantidade de parcelas:(1-6) "))
+        parcelas= int(input("Digite a quantidade de parcelas:(1-6): "))
         if parcelas >= 1 and parcelas <= 6:
             valor_por_parcela= valor / parcelas
             resultado: valor
