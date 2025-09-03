@@ -1,14 +1,23 @@
 import os
 os.system("cls")
 
-n1= int(input("Digite o primeiro número "))
-n2= int(input("Digite o segundo número "))
-c= float("Digite o caractere da operação desejada ")
+primeiro_numero= int(input("Digite o primeiro número "))
+segundo_numero= int(input("Digite o segundo número "))
+operacao= (input("Digite o caractere da operação desejada: + - * / "))
 
-s= n1 - n2
-m= n1 * n2
-d= n1 / n2
-a= n1 + n2
+match operacao:
+    case "+":
+        resultado= primeiro_numero + segundo_numero
+        print(f"O resultado da sua operação é {resultado}")
+    case "-":
+        resultado= primeiro_numero - segundo_numero
+        print(f"O resultado da sua operação é {resultado}") 
+    case "*":
+        resultado= primeiro_numero * segundo_numero
+        print(f"O resultado da sua operação é {resultado}")
+    case "/":
+        resultado= primeiro_numero / segundo_numero
+        print(f"O resultado da sua operação é {resultado}")       
 
-if c = s
-print ("O resultado é {s}")
+    case _:
+        print("Opção invalida")
