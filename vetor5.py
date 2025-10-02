@@ -18,3 +18,4 @@ i
 
 print(f"Quantidade de números pares: {pares}")
 print(f"Quantidade de números ímpares: {impares}")
+print(f"Números digitados: {lista_numero}")
