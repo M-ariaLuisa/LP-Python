@@ -11,7 +11,7 @@ def multiplicar(n1):
     return n1 * 100
 
 def mostrar_resultado(multiplicacao):
-    print(f"O resultado é {multiplicacao}")
+    print(f"O resultado é {multiplicacao:.0f} cm")
 
 limpa_tela()
 metros = float(input("Informe a quantidade de metros: "))
