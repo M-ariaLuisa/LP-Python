@@ -1,0 +1,39 @@
+import os
+from dataclasses import dataclass
+os.system
+
+@dataclass
+class Pessoa:
+    nome:str
+    email:str
+    endereco:str
+
+    def mostrar_dados(self):
+        os.system
+        print("= Dados do usuário =")
+        print(f"""Nome: {self.nome}
+Endereco:{self.endereco}
+Email:{self.email}
+""")
+
+    def mostrar_somente_nome(self):
+        print("= Nome do usuário =")
+        print(f"Nome:{self.nome}")
+
+print("Solicitando os dados da pessoa")
+pessoa1=Pessoa(nome=input("Informe o seu nome:\n"),
+            email=input("Informe sua email:\n"),
+            endereco=input("Informe seu endereço:\n"))    
+pessoa2=Pessoa(nome=input("Informe o seu nome:\n"),
+            email=input("Informe sua email:\n"),
+            endereco=input("Informe seu endereço:\n")) 
+                    
+           
+print(f"= Exibindo resultados =")
+pessoa1.mostrar_dados()
+pessoa1.mostrar_somente_nome()
+
+pessoa2.mostrar_dados()
+pessoa2.mostrar_somente_nome()
+
+
