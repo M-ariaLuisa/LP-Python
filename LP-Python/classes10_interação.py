@@ -22,5 +22,4 @@ cliente1=  Cliente(nome="Marta",
                    endereco=Endereco(logradouro="Rua A", numero=23))
 
 print("Mostrar dados do cliente")
-cliente1.mostrar_dados
 
