@@ -1,0 +1,3 @@
+it a coisa, Stephen King, terror, 90.0
+mr mercedes, Stephen King, mistério, 85.0
+orgulho e preconceito, Jane Austen, romance, 40.0
